@@ -37,4 +37,8 @@ public :
         newNode->leftChild = nullptr;
         newNode->rightChild = nullptr;
 
+        Node* parent = nullptr;
+        Node* currentNode = nullptr;
+        search(element, parent, currentNode);
+
         
