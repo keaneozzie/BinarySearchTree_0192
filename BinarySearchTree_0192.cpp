@@ -91,3 +91,11 @@ void preorder(Node* ptr) {
         preorder(ptr->rightChild);
     }
 }
+
+void postorder(Node* ptr) {
+    if (ptr != nullptr) {
+        postorder(ptr->leftChild);
+        postorder(ptr->rightChild);
+        cout << ptr->info << " ";
+    }
+}
