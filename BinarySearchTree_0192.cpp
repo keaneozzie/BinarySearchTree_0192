@@ -85,6 +85,11 @@ public :
     }
 
 void preorder(Node* ptr) {
+
+    if (ROOT == nullptr) { 
+        cout << "Tree is empty" << endl; 
+        return;
+
     if (ptr != nullptr) {
         cout << ptr->info << " ";
         preorder(ptr->leftChild);
@@ -93,9 +98,23 @@ void preorder(Node* ptr) {
 }
 
 void postorder(Node* ptr) {
+
+    if (ROOT == nullptr) {
+        cout << "Tree is empty" << endl;
+        return;
+
     if (ptr != nullptr) {
         postorder(ptr->leftChild);
         postorder(ptr->rightChild);
         cout << ptr->info << " ";
     }
 }
+}
+}
+};
+
+int main() { 
+    
+    BinaryTree x;
+    
+    
