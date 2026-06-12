@@ -84,3 +84,10 @@ public :
         }
     }
 
+void preorder(Node* ptr) {
+    if (ptr != nullptr) {
+        cout << ptr->info << " ";
+        preorder(ptr->leftChild);
+        preorder(ptr->rightChild);
+    }
+}
